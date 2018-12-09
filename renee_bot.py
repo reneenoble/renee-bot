@@ -13,7 +13,7 @@ def hello_world():
     return 'Hello hello!'
 
 # You can message lol_bot via <your website>/lol
-@app.route('/lol', method='POST')
+@app.route('/lol', methods=['POST'])
 def lol_bot():
     # Get the value of the 'text' query parameter
     # request.args is a dictionary (cool!)
