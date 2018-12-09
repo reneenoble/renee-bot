@@ -14,7 +14,7 @@ def send_message(text, event_type, channel):
     headers = {
       # For simplicity I've just pasted in my access token here
       # but this would be a good place to teach about environment variables!
-      'Authorization': 'Bearer xoxb-452146303616-500172017334-jk2A3U0ZKq5p99xeSyb544rw',
+      'Authorization': 'Bearer xoxb-452146303616-498536714417-bA8rJpa2IndhM2SPxES5lXKx',
       'Content-Type': 'application/json',
     }
     requests.post('https://slack.com/api/chat.postMessage', data=json.dumps(json_response), headers=headers)
