@@ -4,7 +4,7 @@ import re
 
 def on_enter(statement, output=print):
   # Don't repeat back any @user mentions!
-  statement = re.sub('<@.*> ', '', statement)
+  statement = re.sub('<@.*> ?', '', statement)
 
   statement = statement.replace('@ncssbot ', '')
   output(f"'{statement}' is a statement. Try again.")

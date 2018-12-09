@@ -4,7 +4,7 @@ import re
 
 def on_enter(query, output=print):
   # Don't repeat back any @user mentions!
-  query = re.sub('<@.*> ', '', query)
+  query = re.sub('<@.*> ?', '', query)
 
   output(f"{query}... I haven't heard that one before.")
   output(f"What a good question! Ask me another!")
