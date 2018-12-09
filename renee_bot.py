@@ -13,11 +13,11 @@ def hello_world():
     return 'Hello hello!'
 
 # You can message lol_bot via <your website>/lol
-@app.route('/lol')
+@app.route('/lol', method='POST')
 def lol_bot():
     # Get the value of the 'text' query parameter
     # request.args is a dictionary (cool!)
-    text = request.args.get('text')
+    text = request.form.get('text')
     # This bot lols at every command it gets sent!
     return f'lol {text}'
 
