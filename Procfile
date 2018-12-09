@@ -1,1 +1,1 @@
-web: gunicorn --bind 0.0.0.0:$PORT renee_bot:app 
+web: gunicorn --bind 0.0.0.0:$PORT slack_bot:app 
