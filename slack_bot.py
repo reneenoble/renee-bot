@@ -50,8 +50,8 @@ def slack_bot():
 
     return ''
 
-if __name__ == '__main__':
-  state = 'START'
-  data = None
+state = 'START'
+data = None
 
+if __name__ == '__main__':
   app.run()
