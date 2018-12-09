@@ -8,6 +8,7 @@ states = {
   'NO QUERY': no_query,
   'QUERY': query,
   'STATEMENT': statement,
+  'CAT': cat,
 }
 
 def on_enter(state, data, output=print):    
